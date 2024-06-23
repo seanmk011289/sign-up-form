@@ -8,7 +8,12 @@
   </head>
   <body>
     <section class="pageContainer" id="container">
-      <div class="left"></div>
+      <div class="left">
+        <div class="logoContainer">
+          <img src="./images/logosymbol.svg" alt="logo_symbol" />Sean K Is Cool
+          Design
+        </div>
+      </div>
       <div class="right">
         <div class="inner">
           <h1>Sign up now to get started</h1>
@@ -19,10 +24,51 @@
           <p><em>You know you want to.</em></p>
           <div class="formContainer">
             <form action="https://seankiscool.com" method="post">
-              <label for="firstName">First Name</label>
-              <input type="text" name="First Name" id="firstName" />
-              <label for="lastName">Last Name</label>
-              <input type="text" name="Last Name" id="lastName" />
+              <div class="formGrid">
+                <div class="gridItem">
+                  <label for="firstName">First Name</label>
+                  <input type="text" name="First Name" id="firstName" />
+                </div>
+                <div class="gridItem">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" name="Last Name" id="lastName" />
+                </div>
+                <div class="gridItem">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="text" name="Phone Number" id="phoneNumber" />
+                </div>
+                <div class="gridItem">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    pattern=".+@example\.com"
+                    name="Email"
+                    id="email"
+                  />
+                </div>
+                <div class="gridItem">
+                  <label for="password"
+                    >Password <br />(Must be at least 8 characters)</label
+                  >
+                  <input
+                    type="password"
+                    minlength="8"
+                    name="Password"
+                    id="password"
+                  />
+                </div>
+                <div class="gridItem">
+                  <label for="confirmPassword">Confirm Password</label>
+                  <input
+                    type="text"
+                    name="Confirm Password"
+                    id="confirmPassword"
+                  />
+                </div>
+                <div class="gridItem">
+                  <input class="submitBtn" type="submit" value="Submit" />
+                </div>
+              </div>
             </form>
           </div>
         </div>
